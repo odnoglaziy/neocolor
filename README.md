@@ -1,8 +1,8 @@
-# Colorizer
+# NEOCOLOR
 
 ## Description
 
-Colorizer is a tool for highlighting words in your terminal. It accepts one or more pattern parameters as input and highlights each match in one of the available colors:
+Neocolor is a tool for highlighting words in your terminal. It accepts one or more pattern parameters as input and highlights each match in one of the available colors:
 
 - Black
 - Red
@@ -18,10 +18,10 @@ Colorizer is a tool for highlighting words in your terminal. It accepts one or m
 To see the available options, run:
 
 ```sh
-$ colorizer --help
+$ neocolor --help
 ```
 
-## Installation
+<!-- ## Installation
 
 You can install Colorizer using the following command:
 
@@ -32,13 +32,13 @@ $ cargo install colorizer
 Alternatively, you can download precompiled binaries from the [Releases](https://github.com/kulinsky/colorizer/releases) section.
 
 ## Examples
-
+-->
 ### Example 1
 
 Highlight the word "world" in red:
 
 ```sh
-$ echo "hello world" | colorizer --color red --regex world
+$ echo "hello world" | neocolor --color red --regex world
 ```
 
 ### Example 2
@@ -46,27 +46,27 @@ $ echo "hello world" | colorizer --color red --regex world
 Highlight words containing the letter "r" in green:
 
 ```sh
-$ echo "hello world" | colorizer --regex "\w+r\w+" --color green
+$ echo "hello world" | neocolor --regex "\w+r\w+" --color green
 ```
 
 ## Configuration
 
-On startup, Colorizer checks for a configuration file in the home directory ~/.config/colorizer/config.yml. It allows you to use profiles defined in this file.
+On startup, Neocolor checks for a configuration file in the home directory ~/.config/neocolor/config.yml. It allows you to use profiles defined in this file.
 
-Create a configuration file in this directory and use a profile from it via the -p or --profile parameter. If the configuration file exists and Colorizer is launched without specifying a profile name, the "default" profile will be used. Colorizer does not terminate abnormally if the configuration file is not found or if the specified profile does not exist.
+Create a configuration file in this directory and use a profile from it via the -p or --profile parameter. If the configuration file exists and Neocolor is launched without specifying a profile name, the "default" profile will be used. Neocolor does not terminate abnormally if the configuration file is not found or if the specified profile does not exist.
 
 ### Usage Example
 
 If the config file exists, you can use the "my_profile" profile as follows:
 
 ```sh
-$ echo "hello, world!" | colorizer -p my_profile
+$ echo "hello, world!" | neocolor -p my_profile
 ```
 
 If the config file exists, the "default" profile will be used if no profile is specified:
 
 ```sh
-echo "hello, world!" | colorizer
+echo "hello, world!" | neocolor
 ```
 
 ### Configuration Example
@@ -86,6 +86,6 @@ profiles:
       - ".*"
 ```
 
-In this repository, you can find a `config.yml` file that includes a profile named `golang-test` for syntax highlighting in Go tests using the `colorizer` tool.
+In this repository, you can find a `config.yml` file that includes a profile named `golang-test` for syntax highlighting in Go tests using the `neocolor` tool.
 
 Enjoy using Colorizer and add some color to your terminal experience!
