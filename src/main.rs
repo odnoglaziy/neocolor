@@ -4,7 +4,9 @@ use std::str::FromStr;
 use anyhow::anyhow;
 use anyhow::Result;
 use clap::Parser;
+// yaml deprecated
 use yaml_rust::YamlLoader;
+use kdl::{ KdlDocument, KdlValue };
 
 pub mod color;
 pub mod processor;
@@ -70,9 +72,11 @@ fn get_patterns_from_cfg_by_profile(
 
     let cfg_as_str = std::fs::read_to_string(cfg_path)?;
 
-    let cfg = YamlLoader::load_from_str(&cfg_as_str)?;
+    // is deprecated
+    let cfg_yaml = YamlLoader::load_from_str(&cfg_as_str)?;
 
-    let profiles = cfg
+    // is too
+    let profiles = cfg_yaml
         .get(0)
         .and_then(|cfg_root| cfg_root["profiles"].as_hash())
         .ok_or(anyhow!("no profiles found"))?;
