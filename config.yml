@@ -1,11 +1,11 @@
 profiles:
   # Profile for syntax highlighting in Go tests
   # Use it to run Go tests like this:
-  #   go test ./... -v | colorizer -p golang-test
+  #   go test ./... -v | neocolor -p golang-test
   #
   # Or, for your convenience, you can create aliases like these:
-  #   alias gt='go test ./... | colorizer -p golang-test'
-  #   alias gtv='go test ./... -v | colorizer -p golang-test'
+  #   alias gt='go test ./... | neocolor -p golang-test'
+  #   alias gtv='go test ./... -v | neocolor -p golang-test'
   golang-test:
     yellow:
       - "Test:.*"

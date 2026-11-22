@@ -9,7 +9,7 @@ use yaml_rust::YamlLoader;
 pub mod color;
 pub mod processor;
 
-const APP_NAME: &str = "colorizer";
+const APP_NAME: &str = "neocolor";
 
 /// Simple program to highlight words in terminal
 #[derive(Parser, Debug)]
