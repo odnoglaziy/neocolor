@@ -1,27 +1,29 @@
 [package]
-name = "neocolor"
-version = "0.2.0"
+name        = "neocolor"
+version     = "0.2.0"
 # original author: Anton Kulinsky
-authors = ["Anton Kulinsky <ankulinsky@gmail.com>", "ODNOGLAZIY <odnoglaziy0git@gmail.com"]
-license = "MIT"
+authors     = ["ODNOGLAZIY <odnoglaziy0git@gmail.com>", "Anton Kulinsky <ankulinsky@gmail.com>"]
+license     = "MIT"
 description = "Neocolor is a tool for highlighting words in your terminal"
-readme = "README.md"
-repository = "https://github.com/odnoglaziy/neocolor"
-keywords = ["cli", "highlight", "color", "terminal", "text"]
-edition = "2024"
-categories = ["command-line-utilities"]
+readme      = "README.md"
+repository  = "https://github.com/odnoglaziy/neocolor"
+# original repo
+credits     = "https://github.com/kulinsky/colorizer"
+keywords    = ["cli", "highlight", "color", "terminal", "text"]
+edition     = "2024"
+categories  = ["command-line-utilities"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 ansi_term = "0.12.1"
-anyhow = "1.0.104"
-clap = { version = "4.6.9", features = ["derive"] }
-home = "0.5.12"
-kdl = "6.7.1"
-miette = { version = "7.6.0", features = ["fancy"] }
-regex = "1.13.2"
+anyhow    = "1.0.104"
+clap      = { version = "4.6.9", features = ["derive"] }
+home      = "0.5.12"
+kdl       = "6.7.1"
+miette    = { version = "7.6.0", features = ["fancy"] }
+regex     = "1.13.2"
 yaml-rust = "0.4.5"
 
 [profile.release]
-lto = "fat"
+lto   = "fat"
 strip = "debuginfo"
