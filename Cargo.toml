@@ -2,7 +2,7 @@
 name = "neocolor"
 version = "0.1.0"
 # original author: Anton Kulinsky
-authors = ["Anton Kulinsky <ankulinsky@gmail.com>", "ODNOGLAZIY <odnoglaziy0git@gmail.com]
+authors = ["Anton Kulinsky <ankulinsky@gmail.com>", "ODNOGLAZIY <odnoglaziy0git@gmail.com"]
 license = "MIT"
 description = "Neocolor is a tool for highlighting words in your terminal"
 readme = "README.md"
