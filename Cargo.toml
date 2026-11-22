@@ -1,12 +1,13 @@
 [package]
-name = "colorizer"
-version = "2.1.0"
-authors = ["Anton Kulinsky <ankulinsky@gmail.com>"]
+name = "neocolor"
+version = "0.1.0"
+# original author: Anton Kulinsky
+authors = ["Anton Kulinsky <ankulinsky@gmail.com>", "ODNOGLAZIY <odnoglaziy0git@gmail.com]
 license = "MIT"
 description = "Colorizer is a tool for highlighting words in your terminal"
 readme = "README.md"
-homepage = "https://github.com/kulinsky/colorizer"
-repository = "https://github.com/kulinsky/colorizer"
+homepage = "https://github.com/odnoglaziy/neocolor"
+repository = "https://github.com/odnoglaziy/neocolor"
 keywords = ["cli", "highlight", "color", "terminal", "text"]
 edition = "2021"
 categories = ["command-line-utilities"]
